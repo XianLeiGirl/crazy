@@ -26,9 +26,9 @@ public class ThreadUtil
 		//FutureTask(Callable<V> callable) 将Callable写的任务封装到一个由执行者调度的FutureTask对象
 		FutureTask<Object> futureTask1 = new FutureTask<Object>(l.get(0));  
 		FutureTask<Object> futureTask2 = new FutureTask<Object>(l.get(1));  
-		FutureTask<Object> futureTask3 = new FutureTask<Object>(l.get(1));
-		FutureTask<Object> futureTask4 = new FutureTask<Object>(l.get(1));
-		FutureTask<Object> futureTask5 = new FutureTask<Object>(l.get(1));
+		FutureTask<Object> futureTask3 = new FutureTask<Object>(l.get(2));
+		FutureTask<Object> futureTask4 = new FutureTask<Object>(l.get(3));
+		FutureTask<Object> futureTask5 = new FutureTask<Object>(l.get(4));
 
 		// 创建线程池并返回ExecutorService实例  
 		ExecutorService executor = Executors.newFixedThreadPool(5);      
